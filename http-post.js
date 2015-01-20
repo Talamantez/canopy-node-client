@@ -4,11 +4,11 @@ var myAuthString = new Buffer("9fcd9f2e-9955-439e-b05d-3a8171676661:ddkgPG1jqntz
 var myAuth = 'Basic ' + myAuthString;
 
 var payload = {
- "sddl": { "out float32 beta_waves" : {},
-      },
-  "vars": {
-          "beta_waves": 400.5
-          }
+   "sddl": { "out float32 beta_waves" : {},
+        },
+    "vars": {
+            "beta_waves": 123455.9
+            }
 };
 
 var payloadString = JSON.stringify(payload);
