@@ -27,39 +27,8 @@ In particular, device(ID) will return a "device object" that has a "set" method.
 http://sandbox.canopy.link/api/login
 
 */
-
 var http = require('http');
-var querystring = require('querystring');
-var payload = querystring.stringify({/*
-    sddl : { "out float32 beta_waves" : {}},
-    "vars" : { "beta_waves": 4.5}*/
-});
 
-//http.Request("POST", "http://sandbox.canopy.link/api/device/ID", payload);   
-var options = {
-  hostname: 'sandbox.canopy.link',
-  port: 80,
-  path: '/api/device/9fcd9f2e-9955-439e-b05d-3a8171676661',
-  headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': Buffer.byteLength(payload)
-    }
-};
+var setCloudVar = function(id, auth, paramName, value){
 
-var req = http.request(options, function(res) {
-  console.log('STATUS: ' + res.statusCode);
-  console.log('HEADERS: ' + JSON.stringify(res.headers));
-  res.setEncoding('utf8');
-  res.on('data', function (chunk) {
-    console.log('BODY: ' + chunk);
-  });
-});
-
-req.on('error', function(e) {
-  console.log('problem with request: ' + e.message);
-});
-
-// write data to request body
-req.write('data\n');
-req.write('data\n');
-req.end();
+} 

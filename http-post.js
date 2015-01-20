@@ -1,18 +1,22 @@
 var http = require('http');
 
+var myAuthString = new Buffer("9fcd9f2e-9955-439e-b05d-3a8171676661:ddkgPG1jqntzhf8lJagVOoZvcc+mMOl8").toString("base64");
+var myAuth = 'Basic ' + myAuthString;
+
 var payload = {
  "sddl": { "out float32 beta_waves" : {},
       },
   "vars": {
-          "beta_waves": 4.5
+          "beta_waves": 400.5
           }
 };
 
 var payloadString = JSON.stringify(payload);
 
 var headers = {
-  'Content-Type': 'application/json',
-  'Content-Length': payloadString.length
+  'Content-Type'   : 'application/json',
+  'Content-Length' : payloadString.length,
+  'Authorization'  : myAuth
 };
 
 var options = {
