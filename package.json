@@ -1,0 +1,29 @@
+{
+  "name": "canopy-node-client",
+  "version": "0.0.1",
+  "description": "Node.js Client for Canopy IoT Cloud Platform",
+  "main": "canopy.js",
+
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Talamantez/canopy-node-client.git"
+  },
+  "keywords": [
+    "iot",
+    "node",
+    "canopy",
+    "cloud",
+    "'internet",
+    "of",
+    "things'"
+  ],
+  "author": "Robert Talamantez <robert.m.talamantez@gmail.com> (http://www.forestfieldinteractive.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Talamantez/canopy-node-client/issues"
+  },
+  "homepage": "https://github.com/Talamantez/canopy-node-client"
+}

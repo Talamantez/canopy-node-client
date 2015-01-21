@@ -89,8 +89,6 @@ var Device = function () {
 			http.request(options, callback).end();			
 		}
 
-				
-
 }
 
 module.exports.Device = new Device();
