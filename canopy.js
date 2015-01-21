@@ -1,23 +1,15 @@
 // canopy.device(ID).set("beta_waves", 4.5);
 var http = require('http');
-var device = {
-		id: function(id){
+var Device = function () {
+	this.id = function(id){
 			this.id = id
-		},
-		set: function(param, value){
-			Object.defineProperty(this, param, {
-			    value: value,
-			    writable: true,
-			    enumerable: true,
-			    configurable: true
-			});
-		},
-		auth: function(authString){
+	}
+	this.auth = function(authString){
 			//9fcd9f2e-9955-439e-b05d-3a8171676661:ddkgPG1jqntzhf8lJagVOoZvcc+mMOl8			
 			var myAuthString = new Buffer(authString).toString("base64");
 			this.auth = 'Basic ' + myAuthString;
-		},
-		post: function(param, value){
+		}
+	this.set = function(param, value){
 			console.log('Posting data to device: '+ this.id);
 			var sddlType = "out float32 " + param;
 			console.log('sddlType: ');
@@ -78,7 +70,7 @@ var device = {
 			req.end();			
 
 					},
-		get : function(){
+	this.get = function(){
 			console.log('Getting data for device: '+this.id);
 			var options = {
 			  host: 'sandbox.canopy.link',
@@ -102,32 +94,10 @@ var device = {
 			http.request(options, callback).end();			
 		}
 
-				}
-
-var get = function(deviceId){
-		var options = {
-		  host: 'sandbox.canopy.link',
-		  path: '/api/device/' + deviceId
-		};
-
-		callback = function(response) {
-		  var str = '';
-
-		  //another chunk of data has been recieved, so append it to `str`
-		  response.on('data', function (chunk) {
-		    str += chunk;
-		  });
-
-		  //the whole response has been recieved, so we just print it out here
-		  response.on('end', function () {
-		    console.log(str);
-		  });
-		}
-
-		http.request(options, callback).end();
+				
 
 }
-module.exports.device = device;
-module.exports.get = get;
+module.exports.Device = new Device();
+
 /*var myDevice = new canopy.Device();
 myDevice.id(1234);*/
