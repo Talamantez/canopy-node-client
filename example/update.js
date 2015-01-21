@@ -22,8 +22,7 @@ var myDevice = canopy.Device;
 	(i.e. myDevice.id('128314rh934thgf4942')  )
 */
 
-// myDevice.id('Your Device Id');
-myDevice.id('9fcd9f2e-9955-439e-b05d-3a8171676661');
+ myDevice.id('Your Device Id');
 
 /*
 	>>>>>> Enter your Canopy Device Id & Secret Key below, 
@@ -32,8 +31,7 @@ myDevice.id('9fcd9f2e-9955-439e-b05d-3a8171676661');
 	(i.e. myDevice.auth('232f3h8023f43h80:fh3802h49t02')  )
 */
 
-// myDevice.auth('Your Device Id:Your Secret Key');
-myDevice.auth('9fcd9f2e-9955-439e-b05d-3a8171676661:ddkgPG1jqntzhf8lJagVOoZvcc+mMOl8');
+myDevice.auth('Your Device Id:Your Secret Key');
 
 myDevice.set(process.argv[2], process.argv[3], function(callback){
 	callback();
