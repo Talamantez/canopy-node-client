@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/robert/.nvm/v0.10.35/bin/node',
+1 verbose cli   '/home/robert/.nvm/v0.10.35/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/robert/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/robert/.npm/canopy-node-client/0.0.1/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /home/robert/.npm/canopy-node-client/0.0.1/package.tgz
+12 verbose folder .
+13 info prepublish canopy-node-client@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/robert/.npm/1f1177db-tar.lock
+16 silly lockFile a951019b-py-node-client-0-0-1-package-tgz tar:///home/robert/.npm/canopy-node-client/0.0.1/package.tgz
+17 verbose lock tar:///home/robert/.npm/canopy-node-client/0.0.1/package.tgz /home/robert/.npm/a951019b-py-node-client-0-0-1-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile a951019b-py-node-client-0-0-1-package-tgz tar:///home/robert/.npm/canopy-node-client/0.0.1/package.tgz
+21 silly lockFile a951019b-py-node-client-0-0-1-package-tgz tar:///home/robert/.npm/canopy-node-client/0.0.1/package.tgz
+22 silly lockFile fd4a0156-canopy-node-client-0-0-1-package /home/robert/.npm/canopy-node-client/0.0.1/package
+23 verbose lock /home/robert/.npm/canopy-node-client/0.0.1/package /home/robert/.npm/fd4a0156-canopy-node-client-0-0-1-package.lock
+24 silly lockFile fd4a0156-canopy-node-client-0-0-1-package /home/robert/.npm/canopy-node-client/0.0.1/package
+25 silly lockFile fd4a0156-canopy-node-client-0-0-1-package /home/robert/.npm/canopy-node-client/0.0.1/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'canopy-node-client',
+28 silly publish   version: '0.0.1',
+28 silly publish   description: 'Node.js Client for Canopy IoT Cloud Platform',
+28 silly publish   main: 'canopy.js',
+28 silly publish   scripts: { test: 'test' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/Talamantez/canopy-node-client.git' },
+28 silly publish   keywords: [ 'iot', 'node', 'canopy', 'cloud', '\'internet', 'of', 'things\'' ],
+28 silly publish   author:
+28 silly publish    { name: 'Robert Talamantez',
+28 silly publish      email: 'robert.m.talamantez@gmail.com',
+28 silly publish      url: 'http://www.forestfieldinteractive.com/' },
+28 silly publish   license: 'MIT',
+28 silly publish   bugs: { url: 'https://github.com/Talamantez/canopy-node-client/issues' },
+28 silly publish   homepage: 'https://github.com/Talamantez/canopy-node-client',
+28 silly publish   readme: '# canopy-node-client\nCanopy client for Node.js\n\n## Create a Canopy account\n* Go to <b>www.canopy.link</b>\n* In the top right corner of the window, click <b>Log In</b>\n* Complete the information under <b>Sign Up</b>\n\n## Create a Device\n\n* Go to <b>www.canopy.link</b>\n* In the top right corner of the window, click <b>Log In</b>\n* In the bottom left corner of the dashboad, click <b>Create Devices</b>\n* Enter the device name and click <b>Create Devices</b>\n\n## Set a Canopy cloud variable\n\n*  Get the <b>Device Id</b> and <b>Secret Key</b> from the web dashboard\n(select the device, this will update the card on the right, choose the <b>Details</b> option on the card\'s menu bar.\n\n* cd into your project, then install the canopy client:\n```\n\tnpm install canopy-node-client --save\n```\n* In the termial type:\n```\n    var canopy = require(\'canopy-node-client\');\n\n    var myDevice = canopy.Device;\n\n    myDevice.id(\'your device id\');\n\n    myDevice.auth(\'your device id:your device secret key\');\n\n    myDevice.set(\'your cloud var\', value);\n\n```\n\n* Get the device state to check to see that the value has updated with:\n\n```\n\tmyDevice.get();\n```\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '7f08969fe219e5f8a490eb7ce6daa3f16759d3bd',
+28 silly publish   _id: 'canopy-node-client@0.0.1',
+28 silly publish   _shasum: 'a9d37f3c87ef1ad2df6902166a62f1b03a344d2a',
+28 silly publish   _from: '.' }
+29 verbose request where is /canopy-node-client
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 45281a5ae925edfe
+32 verbose url raw /canopy-node-client
+33 verbose url resolving [ 'https://registry.npmjs.org/', './canopy-node-client' ]
+34 verbose url resolved https://registry.npmjs.org/canopy-node-client
+35 verbose request where is https://registry.npmjs.org/canopy-node-client
+36 info trying registry request attempt 1 at 14:52:38
+37 http PUT https://registry.npmjs.org/canopy-node-client
+38 http 403 https://registry.npmjs.org/canopy-node-client
+39 verbose headers { date: 'Wed, 21 Jan 2015 22:52:43 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '3917',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-lax1422-LAX',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1421880763.744890,VS0,VE137',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden cannot modify pre-existing version: 0.0.1
+41 error old={"name":"canopy-node-client","version":"0.0.1","description":"Node.js Client for Canopy IoT Cloud Platform","main":"canopy.js","scripts":{"test":"test"},"repository":{"type":"git","url":"https://github.com/Talamantez/canopy-node-client.git"},"keywords":["iot","node","canopy","cloud","'internet","of","things'"],"author":{"name":"Robert Talamantez","email":"robert.m.talamantez@gmail.com","url":"http://www.forestfieldinteractive.com/"},"license":"MIT","bugs":{"url":"https://github.com/Talamantez/canopy-node-client/issues"},"homepage":"https://github.com/Talamantez/canopy-node-client","gitHead":"15969b9d22ae2d41f149770616a51b421772ef36","_id":"canopy-node-client@0.0.1","_shasum":"b4f4bac98ad7b00bf0fddbba7a5dcae595f760a4","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"talamantez","email":"robert.talamantez2@gmail.com"},"maintainers":[{"name":"talamantez","email":"robert.talamantez2@gmail.com"}],"dist":{"shasum":"b4f4bac98ad7b00bf0fddbba7a5dcae595f760a4","tarball":"http://registry.npmjs.org/canopy-node-client/-/canopy-node-client-0.0.1.tgz"}}
+41 error new={"name":"canopy-node-client","version":"0.0.1","description":"Node.js Client for Canopy IoT Cloud Platform","main":"canopy.js","scripts":{"test":"test"},"repository":{"type":"git","url":"https://github.com/Talamantez/canopy-node-client.git"},"keywords":["iot","node","canopy","cloud","'internet","of","things'"],"author":{"name":"Robert Talamantez","email":"robert.m.talamantez@gmail.com","url":"http://www.forestfieldinteractive.com/"},"license":"MIT","bugs":{"url":"https://github.com/Talamantez/canopy-node-client/issues"},"homepage":"https://github.com/Talamantez/canopy-node-client","readme":"# canopy-node-client\u000aCanopy client for Node.js\u000a\u000a## Create a Canopy account\u000a* Go to <b>www.canopy.link</b>\u000a* In the top right corner of the window, click <b>Log In</b>\u000a* Complete the information under <b>Sign Up</b>\u000a\u000a## Create a Device\u000a\u000a* Go to <b>www.canopy.link</b>\u000a* In the top right corner of the window, click <b>Log In</b>\u000a* In the bottom left corner of the dashboad, click <b>Create Devices</b>\u000a* Enter the device name and click <b>Create Devices</b>\u000a\u000a## Set a Canopy cloud variable\u000a\u000a*  Get the <b>Device Id</b> and <b>Secret Key</b> from the web dashboard\u000a(select the device, this will update the card on the right, choose the <b>Details</b> option on the card's menu bar.\u000a\u000a* cd into your project, then install the canopy client:\u000a```\u000a\u0009npm install canopy-node-client --save\u000a```\u000a* In the termial type:\u000a```\u000a    var canopy = require('canopy-node-client');\u000a\u000a    var myDevice = canopy.Device;\u000a\u000a    myDevice.id('your device id');\u000a\u000a    myDevice.auth('your device id:your device secret key');\u000a\u000a    myDevice.set('your cloud var', value);\u000a\u000a```\u000a\u000a* Get the device state to check to see that the value has updated with:\u000a\u000a```\u000a\u0009myDevice.get();\u000a```\u000a","readmeFilename":"README.md","gitHead":"7f08969fe219e5f8a490eb7ce6daa3f16759d3bd","_id":"canopy-node-client@0.0.1","_shasum":"a9d37f3c87ef1ad2df6902166a62f1b03a344d2a","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"talamantez","email":"robert.talamantez2@gmail.com"},"maintainers":[{"name":"talamantez","email":"robert.talamantez2@gmail.com"}],"dist":{"shasum":"a9d37f3c87ef1ad2df6902166a62f1b03a344d2a","tarball":"http://registry.npmjs.org/canopy-node-client/-/canopy-node-client-0.0.1.tgz"}}: canopy-node-client
+41 error     at RegClient.<anonymous> (/home/robert/.nvm/v0.10.35/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/home/robert/.nvm/v0.10.35/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/home/robert/.nvm/v0.10.35/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/home/robert/.nvm/v0.10.35/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/home/robert/.nvm/v0.10.35/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:944:16
+41 error     at process._tickCallback (node.js:442:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Linux 3.13.0-40-generic
+44 error command "/home/robert/.nvm/v0.10.35/bin/node" "/home/robert/.nvm/v0.10.35/bin/npm" "publish"
+45 error cwd /home/robert/Projects/canopy-node-client
+46 error node -v v0.10.35
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
