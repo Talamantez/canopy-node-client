@@ -18,7 +18,7 @@ Canopy client for Node.js
 *  Get the <b>Device Id</b> and <b>Secret Key</b> from the web dashboard
 (select the device, this will update the card on the right, choose the <b>Details</b> option on the card's menu bar.
 
-*cd into your project, then install the canopy client:
+* cd into your project, then install the canopy client:
 ```
 	npm install canopy-node-client --save
 ```
