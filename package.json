@@ -4,7 +4,7 @@
   "description": "Node.js Client for Canopy IoT Cloud Platform",
   "main": "canopy.js",
   "scripts": {
-    "test": "test"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/Talamantez/canopy-node-client/issues"
   },
-  "homepage": "https://github.com/Talamantez/canopy-node-client"
+  "homepage": "https://github.com/Talamantez/canopy-node-client",
+  "dependencies": {
+    "chai": "^1.10.0",
+    "extend": "^2.0.0",
+    "mocha": "^2.1.0",
+    "type-check": "^0.3.1"
+  }
 }

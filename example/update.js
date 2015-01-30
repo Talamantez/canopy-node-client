@@ -1,4 +1,12 @@
 var canopy = require('..');
+var canopy = require('canopy-node-client');
+
+var client = canopy.canopyInitClient({
+	"server" : "sandbox.canopy.link",
+	"http-port": 8080,
+	"https-port": 443,
+	"use-https": true
+})
 
 /* 
 
