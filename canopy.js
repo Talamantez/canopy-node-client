@@ -23,9 +23,9 @@ var initClient = function(settings) {
 
 	var mySettings = {};
 	extend(false, mySettings, defaultSettings, settings);
+	
 	// validate settings
 	validateSettings(mySettings);
-
 
 	return new Client(mySettings);
 }
@@ -34,7 +34,6 @@ var validateSettings = function(settings) {
 	if (settings["auth-username"] && settings["auth-device-id"]) {
 		throw new Error('Please choose either auth-username or auth-device-id, not both, thanks.');
 	}
-
 	if (settings["auth-username"]) {
 		if (!typeCheck('String', settings["auth-username"])) {
 			throw new Error('Expected string for auth-username');
@@ -50,7 +49,7 @@ var validateSettings = function(settings) {
 			throw new Error('Expected string for auth-device-secret');
 		};	
 	} else {
-		throw new Error('Must provide either auth-username or auth-device-id')
+		throw new Error('Must provide either auth-username or auth-device-id');
 	}
 	if (settings["auth-type"] !== "basic") {
 		throw new Error('Expected string "basic" for auth-type');
@@ -64,9 +63,6 @@ var validateSettings = function(settings) {
 	if (!typeCheck('Number', settings["https-port"])) {
 		throw new Error('Expected number for https-port');
 	};
-	if (!typeCheck('String', settings["auth-username"])) {
-		throw new Error('Expected string for auth-username');
-	};	
 
 }
 
@@ -162,6 +158,16 @@ var Device = function () {
 
 }
 
+var User = function(){
+
+
+}
+// expose Device
 module.exports.Device = new Device();
 
-module.exports.initClient = initClient;
+// expose initClient
+module.exports.initClient = initClient();
+
+// expose auth-username
+module.exports.Client = new User();
+
