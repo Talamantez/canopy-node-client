@@ -1,6 +1,6 @@
 var http = require('http');
 var extend = require('extend');
-var typeCheck = require('type-check');
+var typeCheck = require('type-check').typeCheck;
  
 
 var Client = function(settings) {
@@ -23,10 +23,12 @@ var initClient = function(settings) {
 
 	var mySettings = {};
 	extend(false, mySettings, defaultSettings, settings);
-	
+	console.log(mySettings);
+
+	//check if auth-username or auth-deviceid are provided
 	// validate settings
 	validateSettings(mySettings);
-
+	console.log('validation done');
 	return new Client(mySettings);
 }
 
@@ -166,7 +168,7 @@ var User = function(){
 module.exports.Device = new Device();
 
 // expose initClient
-module.exports.initClient = initClient();
+module.exports.initClient = initClient;
 
 // expose auth-username
 module.exports.Client = new User();

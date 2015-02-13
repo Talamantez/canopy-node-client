@@ -5,7 +5,7 @@ var typeCheck = require('type-check');
 var validate = require('./validate-settings');
 
 var Client = function(settings){
-	this.init = function(){
+	this.init = function(settings){
 		var defaultSettings = {
 			
 			"auth-username": null,
@@ -21,10 +21,13 @@ var Client = function(settings){
 
 		var mySettings = {};
 		extend(false, mySettings, defaultSettings, settings);
-		
+			console.log(mySettings);
+
 		// validate settings
-				
-		var defaultSettings
+		// validateSettings(mySettings);
+
+		return new Client(mySettings);
+
 		}
 	this.id = function(id) {
 				this.id = id

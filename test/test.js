@@ -20,4 +20,12 @@ suite("init", function(){
 	  		canopy.initClient({});
 	  	}).to.throw(Error);
 	});
-})
+	test("Initialize Client with humanClient settings should not fail", function(){
+	  	expect( function() {
+	  		canopy.initClient(
+	  			humanClient
+			);
+	  	}).to.not.throw(Error);
+	
+	});
+});
